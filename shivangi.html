@@ -1,0 +1,53 @@
+<html>
+ <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMRqD-7w4AeXhVLbgoxTV-Z6yyvh3pkpI",
+    authDomain: "major-ac19d.firebaseapp.com",
+    databaseURL: "https://major-ac19d.firebaseio.com",
+    projectId: "majorp-f8dfe",
+    storageBucket: "major-ac19d.appspot.com",
+    messagingSenderId: "876433013745"
+  };
+  firebase.initializeApp(config);
+</script> 
+ <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <body>
+    <center>
+      <!DOCTYPE html>
+<html>
+<body>
+<h2>Information Table</h2>
+<table style="width:70%;border:2px solid black;">
+  <tr>
+    <th style="border:2px solid black;">Name</th>
+    <th style="border:2px solid black;">Mail</th> 
+  </tr>
+<tbody id="table_body" style="border:2px solid black;">
+  </tbody>
+</table>
+
+</body>
+<style>
+    .tr{
+        border: 1px solid black;
+    }
+</style>
+<script>
+$(document).ready(function(){
+  var rootRef= firebase.database().ref().child("users");
+    rootRef.on("child_added",snap =>{
+          
+  var name= snap.child("name").val();
+  var email=snap.child("email").val();
+         
+        $("#table_body").append("<tr><td>" + name +"</td><td>" + email +"</td><td>" +"</td></tr>"); 
+});
+
+
+
+});
+
+</script>
+</html>

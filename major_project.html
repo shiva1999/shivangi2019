@@ -1,0 +1,850 @@
+<html>
+<head>
+<title>MY MUSIC COLLECTION</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">   
+</head>
+ <style media="screen">  
+     
+       body{
+           background-color: white;
+           width: 100%;
+           height: 100%;
+           background-size: auto;
+        }
+     
+       h1{
+          background-color:floralwhite; 
+          font-family: 'Tangerine', serif; 
+          font-size: 50px; 
+          color: blue;
+          text-align: center;
+       }
+    
+     h2{
+         color: gray; 
+         font-size: 30px;
+     }
+     
+     p{
+         align-content: space-around; 
+         color: gray; 
+         font-size: 20px;
+     }
+       bg {
+           position: fixed; 
+           top: 0; 
+        }
+
+       .too{
+           width:100%;
+           height:10px;
+           position: fixed;
+           top: -15px;
+           z-index:99px;
+       }
+      .myslides{
+         margin-top: 90px;
+       }
+       .aboutinner{
+            background-image: url(mp26.jpg);
+            opacity: 45%;
+            border: 1px solid white;
+            height: 500px;
+            width: 100%;
+            margin-top: -43px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .about-content{
+            background-color: cyan;
+            border:1px solid pink;
+            height: 300px;
+            width: 55%;
+            margin-top: 100px;
+            margin-left: 70px;
+        }
+        .bdr{
+            border: 1px dotted grey;
+            height: 250px;
+            width: 94%;
+            margin: 15px;
+            padding: 10px;
+        }
+        .links{
+            width: 15%;
+            height: 25px;  
+            background-color: darkgray;
+            color: white;
+            padding: 5px;
+        }
+      .romantic{
+           
+            float: none;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+      .old{
+            
+            float: right;
+            margin-left: -10px;
+        }
+      .sad{
+            
+            float: left;
+            margin-right: 20px;
+            margin-left: -3px;
+         }
+     .party{
+         
+         float: left;
+         margin-right: 20px;
+         margin-left: -3px;
+     }
+     .patriotic{
+        
+         float: right;
+         margin-left: -10px;
+     }
+     .instrumental{
+            
+            float: none;
+            margin-left: 10px;
+            margin-right: 10px;
+     }
+     .punjabi{
+         float: right;
+         margin-left: -10px;
+     }
+     .telugu{
+         float: left;
+         margin-right: 20px;
+         margin-left: -3px;            
+     }
+     .english{
+            float: none;
+            margin-left: 10px;
+            margin-right: 10px;
+     }
+     
+      .telugu, .punjabi, .english{
+            display: inline-block;
+            text-align: center;
+            height: 470px;
+            width: 32%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }
+     .party, .patriotic, .instrumental {
+            display: inline-block;
+            text-align: center;
+            height: 470px;
+            width: 32%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            margin-bottom: 15px;
+            background-color: black;
+            align-self: center;
+        }
+      .romantic, .sad, .old{
+            display: inline-block;
+            text-align: center;
+            height: 470px;
+            width: 32%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }
+     .img1,.img7, .img8, .img9, .img6, .img5, .img5, .img4, .img3, .img2{
+         max-width: 100%; 
+         max-height: 83%;
+         min-width: 100%;
+         min-height: 83%;
+     }
+      .block{
+            height: 1500px;
+            width: 100%;
+            margin-top: -14px;
+        }
+     .songs{
+         color: white;
+         width: 100%;
+     }
+      .subscribe{
+         background-image: url(mp27.jpg);
+         height: 300px;
+         width: 100%;
+         border: 5px dotted gray;
+          margin-top: -50px;
+     }
+     .inside{
+         border: 5px dotted gray;
+         margin-top: 30px;
+         margin-left: 170px;
+         margin-right: 170px;
+         margin-bottom: 50px;
+     }
+     .form{
+         margin-top: 20px;
+         margin-right: 40px;
+         margin-left: 40px;
+         margin-bottom: 20px;
+     }
+     .line{
+         margin-left: 90px;
+     }
+     .info{
+         margin: 20px;
+     }
+     .button{
+         border: 3px solid gray; 
+         margin-top: 40px; 
+         height: 35px; 
+         width: 83px; 
+         
+     }
+     .connect{
+         background-color: black;
+         margin-top: -10px;
+         margin-bottom: -10px;
+         color: aliceblue;
+     } 
+     
+     @media only screen and (max-width: 560px){
+         body{
+           background-color: white;
+           width: 100%;
+           height: 100%;
+           background-size: auto;
+        }
+         
+         h1{
+          background-color:floralwhite; 
+          font-family: 'Tangerine', serif; 
+          font-size: 20px; 
+          color: blue;
+          text-align: center;
+       }
+    
+        h2{
+         color: gray; 
+         font-size: 13px;
+         
+       }
+    
+       p{
+           color: gray; 
+           font-size: 10px;
+       }
+         
+       bg {
+           position: fixed; 
+           top: 0; 
+        }
+
+       .too{
+           width:100%;
+           height:10px;
+           position: fixed;
+           top: -15px;
+           z-index:99px;
+       }
+      .myslides{
+         margin-top: 70px;
+       }
+       .aboutinner{
+            background-image: url(mp26.jpg);
+            opacity: 45%;
+            border: 1px solid white;
+            height: 350px;
+            width: 100%;
+            margin-top: -43px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .about-content{
+            background-color: cyan;
+            border:1px solid pink;
+            height: 250px;
+            width: 60%;
+            margin-top: 80px;
+            margin-left: 10px;
+        }
+        .bdr{
+            border: 1px dotted grey;
+            height: 230px;
+            width: 94%;
+            margin: 7px;
+            padding: 10px;
+        }
+        .links{
+            width: 65%;
+            height: 25px;  
+            background-color: darkgray;
+            color: white;
+            padding: 5px;
+        }
+         .songs{
+             width: 100%;
+         }
+      .romantic{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+      .old{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+      .sad{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+         }
+     .party{
+         float: none;
+         margin-left: 15%;
+         margin-right: 15%;
+     }
+     .patriotic{
+         float: none;
+         margin-left: 15%;
+         margin-right: 15%;
+     }
+     .instrumental{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+            
+     }
+     .punjabi{
+         float: none;
+         margin-left: 15%;
+         margin-right: 15%;
+         
+     }
+     .telugu{
+         float: none;
+         margin-left: 15%;
+         margin-right: 15%;
+                    
+     }
+     .english{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+    }
+      
+       .telugu, .punjabi, .english{
+            display: inline-block;
+            text-align: center;
+            height: 550px;
+            width: 70%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }
+     .party, .patriotic, .instrumental {
+            display: inline-block;
+            text-align: center;
+            height: 550;
+            width: 70%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            margin-bottom: 15px;
+            background-color: black;
+            align-self: center;
+        }
+      .romantic, .sad, .old{
+            display: inline-block;
+            text-align: center;
+            height: 550px;
+            width: 70%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }  
+         
+      .img7, .img8, .img9, .img6, .img5, .img5, .img4, .img3, .img2, .img1{
+         max-width: 100%; 
+         max-height: 75%;
+         min-width: 100%;
+         min-height: 75%;
+        }
+     
+      .block{
+            height: 5200px;
+            width: 100%;
+            margin-top: -14px;
+            color: black;
+        }
+         .subscribe{
+         background-image: url(mp27.jpg);
+         height: 40%;
+         width: 100%;
+         border: 5px dotted gray;
+         margin-top: -50px;
+     }
+     .inside{
+         border: 5px dotted gray;
+         margin-top: 10px;
+         margin-left: 20%;
+         margin-right: 20%;
+         margin-bottom: 10px;
+     }
+     .form{
+         margin-top: 3%;
+         margin-right: 10%;
+         margin-left: 10%;
+         margin-bottom: 3%;
+     }
+     .line{
+         margin-left: 10%;
+     }
+     .info{
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-top: 3px;
+         margin-bottom: 3px;
+     }
+     .detail{
+         margin-bottom: 3px;
+     }
+     .button{
+         border: 3px solid gray; 
+         margin-top: 8%; 
+         height: 12%; 
+         width: 28%; 
+     }
+     .connect{
+         background-color: black;
+         margin-top: -10px;
+         margin-bottom: -10px;
+         color: aliceblue;
+     } 
+     }
+
+   @media(min-width:561px) and (max-width:900px){
+        
+    body{
+           background-color: white;
+           width: 100%;
+           height: 100%;
+           background-size: auto;
+        }
+     
+       h1{
+          background-color:floralwhite; 
+          font-family: 'Tangerine', serif; 
+          font-size: 50px; 
+          color: blue;
+          text-align: center;
+       }
+    
+     h2{
+         color: gray; 
+         font-size: 20px;
+         
+       }
+    
+       p{
+           color: gray; 
+           font-size: 15px;
+       }
+       
+       bg {
+           position: fixed; 
+           top: 0; 
+        }
+
+       .too{
+           width: 100%;
+           height:10px;
+           position: fixed;
+           top: -15px;
+           z-index:99;
+       }
+      
+      .myslides{
+            margin-top: 90px;
+       }
+      
+       .aboutinner{
+            background-image: url(mp26.jpg)
+            opacity: 45%;
+            border: 1px solid white;
+            height: 400px;
+            width: 100%;
+            margin-top: -43px;
+           background-size: 100% 100%;
+           background-repeat: no-repeat;
+        }
+      
+        .about-content{
+            background-color: cyan;
+            border:1px solid pink;
+            height: 300px;
+            width: 55%;
+            margin-top: 70px;
+            margin-left: 20px;
+        }
+      
+        .bdr{
+            border: 1px dotted grey;
+            height: 280px;
+            width: 93%;
+            margin: 8px;
+            padding: 8px;
+            
+        }
+        .links{
+            width: 30%;
+            height: 10%;  
+            background-color: darkgray;
+            color: white;
+            padding: 3px;
+        }
+       .songs{
+             width: 100%;
+         }
+       .romantic{
+             float: right;
+              margin-left: 3%;
+              margin-right: 6%;
+        }
+      .old{
+            float: right;
+            margin-left: 3%;
+            margin-right: 6%;
+        }
+      .sad{
+            float: left;
+            margin-left: 6%;
+            margin-right: 3%;
+         }
+     .party{
+          float: left;
+          margin-left: 6%;
+          margin-right: 3%;
+     }
+     .instrumental{
+         float: right;
+         margin-left: 3;
+         margin-right: 6%;
+     }
+     .patriotic{
+            float: none;
+            margin-left: 30%;
+            margin-right: 30%;
+     }
+     .punjabi{
+         float: left;
+          margin-left: 6%;
+         margin-right: 3%;
+         
+     }
+     .telugu{
+         float: right;
+         margin-left: 3%;
+         margin-right: 6%;
+     }
+     .english{
+         float: left;
+          margin-left: 6%;
+         margin-right: 3%;
+     }
+      
+       .telugu, .punjabi, .english{
+            display: inline-block;
+            text-align: center;
+            height: 550px;
+            width: 40%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }
+     .party, .patriotic, .instrumental {
+            display: inline-block;
+            text-align: center;
+            height: 550px;
+            width: 40%;
+            margin-top: 3px;
+            border: 1px solid white;
+            color: white;
+            margin-bottom: 15px;
+            background-color: black;
+            align-self: center;
+        }
+      .romantic, .sad, .old{
+            display: inline-block;
+            text-align: center;
+            height: 550px;
+            width: 40%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid white;
+            color: white;
+            background-color: black;
+            align-self: center;
+        }  
+         
+      .img7, .img8, .img9, .img6, .img5, .img5, .img4, .img3, .img2, .img1{
+         max-width: 100%; 
+         max-height: 80%;
+         min-width: 100%;
+         min-height: 80%;
+        }
+     
+      .block{
+            height: 2880px;
+            width: 100%;
+            margin-top: -14px;
+            color: black;
+        }
+
+      .subscribe{
+         background-image: url(mp27.jpg);
+         height: 40%;
+         width: 100%;
+         border: 5px dotted gray;
+         margin-top: -50px;
+     }
+     .inside{
+         border: 5px dotted gray;
+         margin-top: 10px;
+         margin-left: 20%;
+         margin-right: 20%;
+         margin-bottom: 10px;
+     }
+     .form{
+         margin-top: 3%;
+         margin-right: 10%;
+         margin-left: 10%;
+         margin-bottom: 3%;
+     }
+     .line{
+         margin-left: 10%;
+     }
+     .info{
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-top: 3px;
+         margin-bottom: 3px;
+     }
+     .detail{
+         margin-bottom: 3px;
+     }
+     .button{
+         border: 3px solid gray; 
+         margin-top: 8%; 
+         height: 12%; 
+         width: 28%; 
+     }
+     .connect{
+         background-color: black;
+         margin-top: -10px;
+         margin-bottom: -10px;
+         color: aliceblue;
+     } 
+    }
+    
+    </style>
+    <script>
+    function submit(){
+    var name= document.getElementById('name').value;
+    var x=document.getElementById('email').value;  
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");  
+        console.log(name);
+    if(name=="" || name=="null")
+        {
+            alert("Username is undefined");
+        }
+       
+    else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length)
+       {  
+           alert("Please enter a valid e-mail address");    
+       }  
+    else
+        {
+            alert("Thank You!");
+        }
+    }
+  
+    </script>
+<body>
+    <div class="main">
+        <div class="slides">
+     <div class="too">
+       <h1><b>Music-The Sound Of Heart</b>
+           <a href=contact.html style="text-align: right;">Contact Us</a>
+        </h1>
+     </div>
+<!........ SLIDE SHOW.......>
+<section>
+ <center>
+  <img class="mySlides" src="mp1.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp2.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp28.jpg" id="bg" style="width:100%; height:640px">
+  <img class="mySlides" src="mp6.jpg" id="bg" style="width:100%; height:640px">
+ </center>
+</section>
+
+<!.............Automatic Slideshow - change image every 3 seconds.............>
+<script>
+var myIndex = 0;
+show();
+function show() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(show, 3000);
+}
+</script>
+         </div>   </div>
+    <br><br>
+ <div class="aboutinner">
+     
+        <div class="about-content">
+            <div class="bdr">
+                <center><h2>Songs that keeps us alive</h2></center>
+                <p style="align-content: space-around;">
+                Music is the wine that fills the cup of silence. It is a form of art. It is an expression of emotions through harmonic frequencies. It is the best healer of every wound.Music is a part of everyone's life.<br>
+                Stay connected and enjoy the music.</p>
+                <center><div class="links"><a href="about.html">ABOUT US</a></div></center>
+             </div>
+        </div>
+    </div>
+   
+    
+<div class="connect">
+  <center>
+    <h2>SONGS</h2>   
+    </center>
+</div>    
+<div class="Block">
+
+<li class="sad">
+<img src="mp13.jpg" class="img1">
+<div class="songs">
+<h3 style="text-align: center;">When grief is deepest Words are fewest</h3>
+<div class="btn"><a href=sad_songs.html>SAD SONGS</a></div>
+</div>
+</li>
+    
+<li class="romantic">
+<img src="mp8.jpg" class="img2">
+<div class="songs">
+<h3 style="text-align: center;">Feel the magic of love</h3>
+<div class="btn"><a href=romantic_songs.html>ROMANTIC SONGS</a></div>
+</div>
+</li>
+
+<li class="old">
+<img src="mp9.jpg" class="img3">
+<div class="songs">
+<h3 style="text-align: center;">Relive the memories</h3>
+<div class="btn"><a href=old_songs.html>OLD SONGS</a></div>
+</div>
+</li>
+    
+ <li class="party">
+<img src="mp14.jpg" class="img4">
+<div class="songs">
+<h3 style="text-align: center;">Tap your feet on the floor</h3>
+<div class="btn"><a href=party_songs.html>PARTY SONGS</a></div>
+</div>
+</li>   
+  
+<li class="patriotic">
+<img src="mp30.jpg" class="img5">
+<div class="songs">
+<h3 style="text-align: center;">Spot the patriotism inside you</h3>
+<div class="btn"><a href=patriotic_songs.html>PATRIOTIC SONGS</a></div>
+</div>
+</li>
+    
+<li class="instrumental">
+<img src="mp20.jpg" class="img6">
+<div class="songs">
+<h3 style="text-align: center;">The story without words</h3>
+<div class="btn"><a href=instrumental_songs.html>INSTRUMENTAL SONGS</a></div>
+</div>
+</li>
+  
+<li class="punjabi">
+<img src="mp21.jpg" class="img7">
+<div class="songs">
+<h3 style="text-align: center;">The power of Punjabi</h3>
+<div class="btn"><a href=punjabi_songs.html>PUNJABI SONGS</a></div>
+</div>
+</li>
+    
+<li class="english">
+<img src="mp19.jpg" class="img8">
+<div class="songs">
+<h3 style="text-align: center;">The feel of Hollywood</h3>
+<div class="btn"><a href=english_songs.html>ENGLISH SONGS</a></div>
+</div>
+</li>
+    
+<li class="telugu">
+<img src="mp33.jpg" class="img9">
+<div class="songs">
+<h3 style="text-align: center;">The swag of South</h3>
+<div class="btn"><a href=telugu_songs.html>TELUGU SONGS</a></div>
+</div>
+</li>
+
+</div>   
+       
+<div class="subscribe">
+    <div class="inside">
+        <div class="form">
+            <center><h4>Sign up </h4></center>
+            <div class="line">
+                <strong>Please enter your information below:</strong>
+                </div>
+                    <input type="hidden" name="action" value="subscribe" />
+                    <div class="info">
+                       <label for="name">Name</label>
+                       <input class="detail" value="" id="name" name="name" type="name" />
+                       <br>
+                       <label for="email">Email</label>
+                       <input class="detail" value="" id="email" name="email" type="email" />
+                       <div>
+                             <center><input value="Thanks!" class="button" type="submit" onclick="submit()" /></center>
+                        </div>
+                    </div>
+              
+            
+        </div>
+    </div>
+</div>
+  </body>   
+    
+   
+</html>

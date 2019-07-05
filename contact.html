@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<style media="screen">
+    body{
+        border: 5px solid pink;
+    }
+     .form{       
+              background-image: url(mp46.jpg);
+              border: 5px solid pink;
+              height: 780px;
+              width: 97%;
+              padding-top: -30px;
+              margin-left: 1.5%;
+              margin-top: 15px;
+              margin-bottom: 10px;
+              margin-right: 1.5%;
+              font-family: Impact, fantasy, sans-serif;
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+    }
+h3{
+       font-family:Brush Script MT, Brush Script Std, cursive; 
+       color: deeppink;
+       font-size: 50px;
+    }
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 1.5%;
+}
+
+input[type=submit] {
+  background-color: Magenta;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 6%;
+  padding-left: 6%;  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: Indigo;
+}
+
+.container {
+  border-radius: 15px;
+  background-color:white;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 5px;
+  padding-bottom: 200px;
+ /* margin:10px 300px 50px 250px; */
+  margin-top: 10px;
+  margin-bottom: 300px;
+  margin-left: 17%;
+  margin-right: 17%;  
+  width: 62%;
+  height: 150px;
+}
+
+    .details{
+        border: 5px solid pink;
+        background-image: url(mp47.jpg);
+        font-family: 'Tangerine', serif;
+        font-size: 40px;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+   <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBNnnoixks9EDuCtTpEsit2VoG6jgiN-2k",
+    authDomain: "contact-b860c.firebaseapp.com",
+    databaseURL: "https://contact-b860c.firebaseio.com",
+    projectId: "contact-b860c",
+    storageBucket: "",
+    messagingSenderId: "898004172272",
+    appId: "1:898004172272:web:cbdaa1612c1c355f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script>
+    function submit(){
+    var name= document.getElementById('name').value;
+    var cont= document.getElementById('country').value;
+    var comt= document.getElementById('comment').value;
+        console.log(comt);
+    if(name=="" || name=="null")
+        {
+            alert("Username is undefined");
+        }
+       
+    else if(In=="" || Pa=="" || Fr=="" || Au=="" || Us=="" || Ch=="")
+       {  
+           alert("Please choose your country name");    
+       }  
+    else if (comt.length< 20)
+        {
+            alert("Enter atleast 20 letters");
+        }
+    else
+        {
+            alert("Thank You!");
+            firebase.database().ref('users/').push({
+            "name": name,   
+            "comment": comt 
+      });
+        }
+    }
+    
+    </script>
+</head>
+<body>
+<title> Contact US</title>
+    <div class="form">
+<h3><center>Contact Form</center></h3>
+
+<div class="container">
+  
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name.."><br>
+
+    <label for="country">Country</label><br>
+    <select id="country" name="country">
+      <option value="India" id="In" class="nation">India</option>
+      <option value="Pais" id="Pa" class="nation">Paris</option>
+      <option value="France" id="Fr" class="nation">France</option>
+      <option value="Australia" id="Au" class="nation">Australia</option>
+      <option value="USA" id="Us" class="nation">USA</option>
+      <option value="China" id="Ch" class="nation">China</option>
+    </select><br>
+
+    <label for="comment">Comment</label><br>
+    <textarea id="comment" name="comment" placeholder="Write ur comment here......" style="height:50px"></textarea><br>
+
+    <center><input type="submit" value="Submit" onclick="submit();"></center>
+ </div>
+</div>
+     <div class="details">
+        Please use the contact form above to contact us regarding any questions you might have! We are here to help! If you fill out the form below with all of your relevant information, a member of our team will contact you as soon as possible, and in no more than 1-2 business days.<br>
+         You can also call us at <u>0141-454-8150</u>.<br><br>
+        <strong>Our Customer Care hours are Monday-Friday <emp> 6AM&nbsp;&nbsp;-&nbsp;&nbsp;6 PM</emp> (PST).</strong>
+         
+        
+        </div>
+</body>
+</html>
